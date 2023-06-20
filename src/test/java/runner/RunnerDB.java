@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        tags = "@US01Api",
+        tags = "US01Api",
         glue = {"stepDefinitions","hooks"},
         features = "./src/test/resources/",
-        dryRun = true
+        dryRun = false
 )
 
 public class RunnerDB {
