@@ -7,7 +7,6 @@ import io.restassured.specification.RequestSpecification;
 import static utilities.ManagementOnSchoolAutorization.generateToken;
 
 public class ManagementOnSchoolsBaseUrl {
-
     public static RequestSpecification spec;
 
     public static void setUp() {
