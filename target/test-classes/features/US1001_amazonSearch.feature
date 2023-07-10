@@ -15,7 +15,6 @@
 # sonuclarin iphone icerdigini test eder
 # sayfayi kapatir
 
-
 @tumu
 Feature: US1001 Kullanici Amazon Sayfasinda Arama Yapar
 
