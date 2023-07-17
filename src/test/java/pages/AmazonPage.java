@@ -14,7 +14,7 @@ public class AmazonPage {
 
 
 
-    @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
+    @FindBy(id = "twotabsearchtextbox")
     public WebElement aramaKutusu;
 
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")

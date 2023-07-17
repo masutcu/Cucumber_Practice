@@ -6,6 +6,7 @@ import org.openqa.selenium.Keys;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 
 public class AmazonStepDefinitions {
@@ -14,11 +15,13 @@ public class AmazonStepDefinitions {
     @Given("kullanici amazon sayfasinda")
     public void kullanici_amazon_sayfasinda() {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+        ReusableMethods.bekle(2);
     }
     @Then("kullanici Nutella icin arama yapar")
     public void kullanici_nutella_icin_arama_yapar() {
         amazonPage.aramaKutusu.sendKeys("Nutella" + Keys.ENTER);
     }
+
     @Then("sonuclarin Nutella icerdigini test eder")
     public void sonuclarin_nutella_icerdigini_test_eder() {
         Assert.assertTrue(amazonPage.sonucYazisi.getText().contains("Nutella"));
@@ -32,7 +35,8 @@ public class AmazonStepDefinitions {
 
     @Then("kullanici Java icin arama yapar")
     public void kullanici_java_icin_arama_yapar() {
-        amazonPage.aramaKutusu.sendKeys("Java"+Keys.ENTER);
+
+        amazonPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);
     }
     @Then("sonuclarin Java icerdigini test eder")
     public void sonuclarin_java_icerdigini_test_eder() {
@@ -81,5 +85,17 @@ public class AmazonStepDefinitions {
     @And("url'i {string} icerdigini test eder")
     public void urlIIcerdiginiTestEder(String istenenKelime) {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(istenenKelime));
+    }
+
+    @Given("kullanici topseker icin arama yapar")
+    public void kullaniciTopsekerIcinAramaYapar() {
+
+        amazonPage.aramaKutusu.sendKeys("topseker" + Keys.ENTER);
+
+    }
+
+    @Then("sonucların apple icermedigini test eder")
+    public void sonuclarınAppleIcermediginiTestEder() {
+        Assert.assertFalse(amazonPage.sonucYazisi.getText().contains("apple"));
     }
 }

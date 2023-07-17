@@ -1,0 +1,13 @@
+utilities\ManagementOnSchoolAutorization.class
+pages\AmazonPage.class
+stepDefinitions\AmazonStepDefinitions.class
+utilities\Driver.class
+runner\RunnerDB.class
+stepDefinitions\api_stepdefs\API_StepDefs.class
+utilities\ConfigReader.class
+base_urls\ManagementOnSchoolsBaseUrl.class
+stepDefinitions\database_stepdefs\DB_StepDefs.class
+utilities\DataBaseUtils.class
+hooks\Hooks.class
+runner\TestRunner.class
+utilities\ReusableMethods.class

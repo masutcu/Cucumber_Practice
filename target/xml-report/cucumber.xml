@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="85.244" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC04 kullanici amazonda nutella aratir" time="34.034">
+<system-out><![CDATA[
+Given kullanici amazon sayfasinda...........................................passed
+Given kullanici Nutella icin arama yapar....................................passed
+Then sonuclarin Nutella icerdigini test eder................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC05 kullanici amazonda Java aratir" time="30.456">
+<system-out><![CDATA[
+Given kullanici amazon sayfasinda...........................................passed
+Given kullanici Java icin arama yapar.......................................passed
+Then sonuclarin Java icerdigini test eder...................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC06 kullanici amazonda topseker aratir" time="20.464">
+<system-out><![CDATA[
+Given kullanici amazon sayfasinda...........................................passed
+Given kullanici topseker icin arama yapar...................................passed
+Then sonucların apple icermedigini test eder................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
