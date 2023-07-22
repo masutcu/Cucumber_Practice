@@ -6,7 +6,7 @@ Feature:Aday ogrenciler sisteme kayıt olabilmeli. API
     Then gelen bodyi dogrula "<name>", "<surname>", "<birthplace>", "<phone>", "<gender>", "<Date Of Birth>", "<ssn>","<username>"
     Examples:
       | username   | name | surname | birthplace | phone        | gender | Date Of Birth | ssn         |
-      | alican.987 | Ali  | Can     | Ankara     | 333-555-1255 | MALE   | 2023-06-01    | 333-66-0922 |
+      | alican.987 | veli | han     | istanbul   | 333-555-1255 | MALE   | 2023-06-01    | 333-66-0922 |
 
   @US01_ApiNegative
   Scenario:US01_GuestUser Negative
