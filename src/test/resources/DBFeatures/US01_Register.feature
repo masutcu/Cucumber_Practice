@@ -8,7 +8,6 @@ Feature: Aday ogrenciler sisteme kayıt olabilmelidirler
       | username | name | surname | birthplace | phone        | gender | Date Of Birth | ssn         | password |
       | john129  | John | Doe     | Ankara     | 333-555-1234 | 0      | 2023-06-01    | 333-66-0987 | John.123 |
 
-
       #loop deneme seneryasu
   @LoopDB
   Scenario:
