@@ -5,13 +5,12 @@
 # sonuclarin "Nutella" icerdigini test eder
 # sayfayi kapatir
 
-
-Feature: US1003 kullanici parametre kullanarak arama yapabilmeli
+#language:tr
+Özellik: US1003 kullanici parametre kullanarak arama yapabilmeli
 
   @parametre
-  Scenario: TC06 kullanici parametre ile amazonda arama yapar
-
-    Given kullanici amazon sayfasinda
-    Then kullanici "kupa" icin arama yapar
-    And sonuclarin "kupa" icerdigini test eder
-    And sayfayi kapatir
+  Senaryo: TC06 kullanici parametre ile amazonda arama yapar
+    Diyelim ki kullanici amazon sayfasinda
+    O zaman kullanici "kupa" icin arama yapar
+    Ve sonuclarin "kupa" icerdigini test eder
+    Ve sayfayi kapatir

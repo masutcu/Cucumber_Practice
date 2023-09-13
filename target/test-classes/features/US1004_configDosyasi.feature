@@ -11,8 +11,7 @@
 
    @config
    Scenario: TC07 configuration properties dosyasindan parametre kullanimi
-
      Given kullanici "amazonUrl" sayfasinda
-     Then kullanici 3 sn bekler
+     Then kullanici 1 sn bekler
      And url'i "amazon" icerdigini test eder
      And sayfayi kapatir
